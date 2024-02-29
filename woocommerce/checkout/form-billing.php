@@ -1,6 +1,7 @@
 <?php
 ////СТРАНИЦА ОФОРМЛЕНИЯ ЗАКАЗА блок где все инпуты
 
+
 defined( 'ABSPATH' ) || exit;
 ?>
 <div class="woocommerce-billing-fields">

@@ -10,7 +10,7 @@ remove_action('woocommerce_before_shop_loop', 'woocommerce_output_all_notices', 
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
 //ОТКЛЮЧАЕМ САЙДБАР НА СТРАНИЦЕ МАГАЗИНА
-remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+//remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 
 //
 

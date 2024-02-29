@@ -186,6 +186,8 @@ defined( 'ABSPATH' ) || exit;
 			<?php do_action( 'woocommerce_after_cart_table' ); ?>
 		</form>
 
+
+		
 		<?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
 		</div><!--cart__inner-->
 

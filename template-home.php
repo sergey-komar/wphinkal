@@ -45,6 +45,7 @@
                     <div class="catalog__wrapper tabs__wrapper-menu--open">
                         <div class="catalog-menu__content">
 
+                        
                         <?php
                             $catalog__terms = get_terms([
                                 'taxonomy' => 'product_cat',

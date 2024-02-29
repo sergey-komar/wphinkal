@@ -28,7 +28,23 @@ add_action('after_setup_theme', 'hinkal');
 require_once get_template_directory() . '/inc/woocommerce-hooks.php';
 
 
+// САЙДБАР
+function woostudy_widgets_init() {
+	register_sidebar(
+		array(
+			'name' => esc_html__( 'Sidebar', 'woostudy' ),
+			'id' => 'sidebar-1',
+			'description' => esc_html__( 'Add widgets here.', 'woostudy' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget' => '</section>',
+		)
+	);
+}
+add_action( 'widgets_init', 'woostudy_widgets_init' );
+
 
 function debug($data) {
     echo '<pre>' . print_r($data, 1) . '</pre>';
 }
+
+

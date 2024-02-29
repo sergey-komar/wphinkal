@@ -26,6 +26,7 @@ do_action( 'woocommerce_before_main_content' );
 <?php
 if ( woocommerce_product_loop() ) {
 
+	
 	/**
 	 * Hook: woocommerce_before_shop_loop.
 	 *
@@ -82,7 +83,9 @@ do_action( 'woocommerce_after_main_content' );
  * @hooked woocommerce_get_sidebar - 10
  */
 do_action( 'woocommerce_sidebar' );
+ 
 ?>
+<?php echo do_shortcode('[woof_front_builder]');?>
 	</div>
 	
 	
