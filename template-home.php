@@ -63,7 +63,7 @@
                                 $woo_cat_id = $catalog__term->term_id; //category ID
                                 $category_thumbnail_id = get_term_meta($woo_cat_id, 'thumbnail_id', true);
                                 $thumbnail_image_url = wp_get_attachment_url($category_thumbnail_id);
-                                ?>
+                            ?>
                             <div class="catalog-menu__item">
                                 <a href="<?php echo get_term_link($catalog__term);?>" class="catalog-menu__item-img">
                                     <img src="<?php if(!empty($thumbnail_image_url)){
